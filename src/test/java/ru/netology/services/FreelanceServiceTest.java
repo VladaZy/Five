@@ -15,14 +15,15 @@ public class FreelanceServiceTest {
         int expected = 3;
 
         // вызываем целевой метод:
-        int actual = service.calculate(income, expenses, threshold);
+        int actual;
+        actual = service.calculate(income, expenses, threshold);
 
         // производим проверку (сравниваем ожидаемый и фактический):
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    public void shouldCalculateVacationMonthsForExample2() {
+    public void shouldCalculateVacationMonthgsForExample2() {
         FreelanceService service = new FreelanceService();
 
         // подготавливаем данные:
@@ -32,7 +33,8 @@ public class FreelanceServiceTest {
         int expected = 2;
 
         // вызываем целевой метод:
-        int actual = service.calculate(income, expenses, threshold);
+        int actual;
+        actual = service.calculate(income, expenses, threshold);
 
         // производим проверку (сравниваем ожидаемый и фактический):
         Assertions.assertEquals(expected, actual);
